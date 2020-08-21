@@ -1,4 +1,4 @@
-## **Advanced Lanes Detecting**         [Github](https://github.com/JeonghwaLee-TwinDAD/CarND-Advanced-Lane-Detected/tree/master/video_clip/challenge_video_output.mp4)
+## **Advanced Lanes Detecting**         [(Github)](https://github.com/JeonghwaLee-TwinDAD/CarND-Advanced-Lane-Detected/tree/master/video_clip/challenge_video_output.mp4)
 
 ---
 
