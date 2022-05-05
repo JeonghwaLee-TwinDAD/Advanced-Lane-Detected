@@ -159,10 +159,10 @@ def process_image(input_img):
 l_line = Line() #Line class instance left (global variable)
 r_line = Line() #Line class instance right (global variable)  
 
-'''
+
 # Draw the images
-#img= cv2.imread('./test_images/test1.jpg')
-img= cv2.imread('./challenge_images/challenge_center.jpg')
+img= cv2.imread('./test_images/test1.jpg')
+#img= cv2.imread('./challenge_images/challenge_center.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 #top_down, Mivn = lane_fn.pipeline(img)
@@ -188,7 +188,7 @@ processed_video = video_input.fl_image(process_image)
 processed_video.write_videofile(video_output, audio=False)
 
 
-'''
+
 # Create camera calibration data (dist_pickle dictionary)
 images = glob.glob('./camera_cal/calibration*.jpg')
 # Find cal data with 6*9 chessboard calibration at many images
@@ -205,9 +205,8 @@ dist_pickle["imgpoints"] = imgpoints
 dist_pickle["mtx"] = mtx
 dist_pickle["dist"] = dist
 pickle.dump(dist_pickle, open( "distortion_pickle.p", "wb" ) )
-'''
 
-'''
+
 # RIO check routine
 img= cv2.imread('./challenge_images/challenge_initial.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

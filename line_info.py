@@ -319,6 +319,7 @@ def poly_search(binary_warped, left_fit_prev, right_fit_prev):
     cv2.fillPoly(window_img, np.int_([left_line_pts]), (0,255, 0))
     cv2.fillPoly(window_img, np.int_([right_line_pts]), (0,255, 0))
     poly_img = cv2.addWeighted(out_img, 1, window_img, 0.3, 0)
+
     '''         
     # Plots the left and right polynomials on the lane lines
     f, (ax1, ax2) = plt.subplots(1, 2, figsize=(20,10))
